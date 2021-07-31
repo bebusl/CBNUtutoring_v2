@@ -1,0 +1,52 @@
+{
+  "name": "react-hooks-jwt-auth",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "evergreen-ui": "^5.1.2",
+    "file-saver": "^2.0.2",
+    "global": "^4.4.0",
+    "http-proxy-middleware": "^1.0.6",
+    "js-file-download": "^0.4.12",
+    "react": "^17.0.1",
+    "react-dom": "^16.13.1",
+    "react-html-table-to-excel": "^2.0.0",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.0",
+    "react-validation": "^3.0.7",
+    "redux": "^4.1.0",
+    "styled-components": "^5.2.1",
+    "tableexport": "^5.2.0",
+    "validator": "^13.1.17",
+    "xlsx": "^0.16.9"
+  },
+  "scripts": {
+    "start": "set PORT=9090 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://swtutor.cbnu.ac.kr"
+}

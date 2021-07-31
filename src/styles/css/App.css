@@ -1,0 +1,257 @@
+label {
+  display: block;
+  margin-top: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  flex-direction: row;
+  margin: 3px 0 !important;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 5px 0.3rem;
+  padding: 0 5px;
+}
+
+ul li label {
+  width: 6rem;
+}
+
+.card-container.card {
+  max-width: 350px !important;
+  padding: 40px 40px;
+}
+
+.card {
+  background-color: #f7f7f7;
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  margin-top: 50px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100vw;
+  margin: 5vh 5vw;
+}
+
+.container {
+  max-width: 90vw;
+}
+
+.container .menu {
+  width: 15%;
+  padding: 16px 8px;
+  background-color: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.container .main-column {
+  width: 80%;
+  margin-left: 3vw;
+  background-color: white;
+  padding: 5vh 5vw;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  min-height: 60vh;
+}
+
+.container .main-column h3 {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.dateWrap {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+  align-items: center;
+}
+
+.yearWrap,
+.semesterWrap {
+  margin-right: 16px;
+}
+
+button {
+  background-color: #343a40;
+  color: white;
+  border: 1px solid #ededed;
+  padding: 1px 15px;
+  border-radius: 10px;
+}
+
+#root > div > div.selectMenu > button {
+  background-color: rgba(52, 58, 64, 0.1);
+  color: #343a40;
+  border: 1px solid #343a40;
+  margin-right: 0.3em;
+  border-radius: 4px;
+  box-shadow: rgba(52, 58, 64, 0.3) 2px 2px 2px;
+}
+
+#root > div > div.selectMenu > button:hover,
+#root > div > div.selectMenu > button:hover > a {
+  background-color: rgba(52, 58, 64, 1);
+  color: white;
+  text-decoration: none;
+}
+
+#root > div > div.selectMenu > button > a {
+  color: #343a40;
+}
+
+.selectMenu {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  box-shadow: #ebebeb 3px 3px 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 1.5vw;
+}
+
+.selectMenu > a {
+  color: #222222;
+  margin-right: 1vw;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+.container > div.menu > div > nav > p {
+  padding: 5px 8px;
+  border-bottom: 1px solid #ededed;
+  margin: 0;
+}
+
+.customTable {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.ub-fnt-sze_12px {
+  font-size: 12px;
+}
+
+.forgetQuestion {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.forgotPasswordwrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgotPassword-form {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  border: 1px solid white;
+  margin-top: 5vh;
+  padding: 5vh 5vw;
+}
+
+.hidden {
+  display: none;
+}
+
+.more {
+  padding: 5%;
+  font-size: 0.9rem;
+}
+
+.scroll-page {
+  overflow: scroll;
+}
+
+#student-list-to-xls {
+  min-width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+#student-list-to-xls thead {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#student-list-xls-button {
+  float: right;
+}
+
+textarea {
+  width: 80%;
+}
+
+.red {
+  color: red;
+}
+
+.border-color-red {
+  border-style: solid;
+  border-color: red;
+  background-color: rgb(255, 255, 255);
+  border-width: 1px;
+}
+
+.small-size {
+  font-size: 0.8em;
+}
+
+thead {
+  color: rgb(66, 90, 112);
+  font-size: 0.9rem;
+  font-weight: 900;
+  background-color: rgb(245, 246, 247);
+  border: none;
+  border-bottom: 1px solid rgb(228, 231, 235);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+table {
+  border: none;
+  border-top: 1px solid rgb(228, 231, 235);
+  border-bottom: 1px solid rgb(228, 231, 235);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+tbody {
+  color: rgb(66, 90, 112);
+
+  font-size: 0.8rem;
+}
