@@ -1,56 +1,29 @@
-## React Hooks: JWT Authentication (without Redux) example
+# ⚠️공사중!
+ 리액트 배우고 처음 만들어본 거라 최적화된 부분이 거의 없다. 아쉬움이 많은 프로젝트였어서 새로 만들어보려고 한다!
 
-For more detail, please visit:
+# 기능 정리
+## 공통
+* 회원가입(JWT, accessToken과 refreshToken 쓰는 방식)
+* 비밀번호 찾기 -> 이메일 토큰 인증
+* 회원정보 수정 - 자기소개(optional),깃헙, 연락처 등
+## 학생(튜티)
+* 멘토링 과목 확인(교수/과목/튜터정보/튜터소개/운영계획서)
+* 멘토링 수강신청(본인 정보 확인 -> 수강신청 완료)
+* 수강신청 취소/수정 접수(관리자 확인 후 관리자가 처리)
+## 학생(튜터)
+* 공지된 과목 튜터링 지원(관리자 확인 후 승인) - 해당과목 성적/운영계획서
+* 튜터링 과목 보고서 업로드 사이트(추가/수정/삭제)
+## 관리자
+* 수강신청 취소/수정 문의 처리하는 게시판 - 승낙/거부(사유)
+* 튜터링 모집하는 과목 설정
+* 튜터링 과목 수강생 관리(과목별 수강생 정보 열람, 수강생 목록 excel 파일로 생성, 수강생 삭제 처리)
+* 수강신청 기간 선택(해당 기간에만 수강신청 가능)
+* 튜터링 보고서 확인 및 다운로드 사이트(전체, 주차별, 튜터별, 개별 보고서 다운로드/열람)
 
-> [React Hooks: JWT Authentication & Authorization example](https://bezkoder.com/react-hooks-jwt-auth/)
+# Tech stack
+## 프론트
+* react, redux(toolkit), next.js 도입고려, Typescript, Jest
+## 백엔드
+* node.js,express, mysql
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-### Set port
-.env
-```
-PORT=3000
-```
-
-## Note:
-Open `src/services/auth-header.js` and modify `return` statement for appropriate back-end (found in the tutorial).
-
-```js
-export default function authHeader() {
-  const user = JSON.parse(localStorage.getItem('user'));
-
-  if (user && user.accessToken) {
-    // return { Authorization: 'Bearer ' + user.accessToken }; // for Spring Boot back-end
-    return { 'x-access-token': user.accessToken };             // for Node.js Express back-end
-  } else {
-    return {};
-  }
-}
-```
-
-## Project setup
-
-In the project directory, you can run:
-
-```
-npm install
-# or
-yarn install
-```
-
-or
-
-### Compiles and hot-reloads for development
-
-```
-npm start
-# or
-yarn start
-```
-
-Open [http://localhost:8081](http://localhost:9090) to view it in the browser.
-
-The page will reload if you make edits.
-
-
-final
+자동 테스팅&배포화 고려
